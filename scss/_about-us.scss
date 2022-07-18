@@ -1,0 +1,100 @@
+.about-me {
+    display: flex;
+    height: 80vh;
+    padding: 2em 0em 0em 0em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .second-section {
+        display: flex;
+        height: 18em;
+        align-items: center;
+
+        #about-tab {
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                margin-bottom: 1.1em
+            }
+
+            p {
+                margin: 0em 5em;
+                line-height: 2em;
+                margin-bottom: 1em;
+            }
+        }
+
+
+
+        #skill-tab {
+            width: 100%;
+            text-align: center;
+            display: none;
+
+            h1 {
+                color: #1e2934f0
+            }
+
+            .skill-list {
+                text-align: left;
+                display: flex;
+                margin: 1em 0em;
+
+                .frontend-skill {
+                    margin-right: 1.5em
+                }
+
+                .frontend-skill,
+                .backend-skills {
+                    width: 13.5em;
+
+                    .skill-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0.5em;
+                        margin-bottom: 0.5em;
+                        border: 1px solid black;
+                        border-radius: 0.5em;
+                        background: #1e2934f0;
+                        color: white;
+
+                        .checked {
+                            color: #090e14f0;
+                        }
+                    }
+                }
+
+                .backend-skills {
+                    margin-left: 1.5em
+                }
+            }
+
+            // display: none;
+        }
+    }
+
+    .slider {
+        display: flex;
+        height: 5vh;
+        align-items: center;
+
+        .first-active {
+            margin-right: 0.5em;
+            background: white;
+            border: 1px solid black;
+        }
+    }
+
+    div>.first-active,
+    div>.second-active {
+        height: 0.5em;
+        width: 1.5em;
+        background: #1e2934f0;
+        border-radius: 10px;
+        cursor: pointer
+    }
+
+
+}

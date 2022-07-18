@@ -1,0 +1,56 @@
+.main-section {
+    // background-color: $content-background;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url('../image/pexels-the-lazy-artist-gallery-1471120.jpg');
+    height: 100vh;
+    display: flex;
+
+    div {
+        width: 50%;
+    }
+
+    div:first-child {
+        margin: 8em 0em 0em 8em;
+        color: white;
+
+        p:first-child,
+        #auto-text {
+            letter-spacing: 0.2em;
+            word-spacing: 0.5em;
+            font-size: 1.1em
+        }
+
+        p:nth-child(2) {
+            font-size: 4em;
+            font-weight: bolder;
+        }
+
+        .more {
+            width: 8em;
+            color: white;
+            padding: 0.3em 0.5em;
+            border: 1px solid white;
+            border-radius: 0.2em;
+            text-align: center;
+            margin-top: 0.8em;
+            background: linear-gradient(180deg, #63b8ee00 5%, #8f969b 100%);
+
+            a {
+                color: white
+            }
+
+            &:hover,
+            &:active {
+                background: linear-gradient(90deg, #63b8ee00 5%, #8f969b 100%);
+            }
+        }
+    }
+
+    div:nth-child(3) {
+        text-align: center;
+    }
+}

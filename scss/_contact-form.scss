@@ -1,0 +1,75 @@
+.contact-form {
+    padding: 0em;
+    background: none !important;
+    // background-image: url('../image/pexels-milo-textures-2768398.jpg') !important;
+
+
+    h1 {
+        text-align: center;
+        margin-top: 1em !important;
+
+        &::before {
+            margin-left: 48% !important;
+        }
+
+        &::after {
+            margin-right: 48% !important
+        }
+    }
+
+    form {
+        width: 40%;
+        margin: 2em auto;
+
+        .form-group-one {
+            display: flex;
+            width: 100%;
+
+            .name-col,
+            .email-col {
+                width: 50%;
+                height: 6vh;
+
+                input {
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 0.5em;
+                    border: 1px solid gray;
+                    padding: 0 0.5em;
+                }
+
+                .email {
+                    margin-left: 5%
+                }
+            }
+        }
+
+        .form-group-two {
+            width: 100%;
+
+            textarea {
+                width: 100%;
+                margin: 2em 0em 0em 0em;
+                border: 1px solid gray;
+                border-radius: 0.5em;
+                resize: none;
+                padding: 0.5em 0em 0em 0.5em;
+            }
+        }
+
+        button {
+            margin-top: 1.5em;
+            padding: 0.5em;
+            background: white;
+            border: 1px solid gray;
+            border-radius: 0.5em;
+            color: gray;
+            cursor: pointer;
+
+            &:active {
+                color: white;
+                background: $content-background
+            }
+        }
+    }
+}

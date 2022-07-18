@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul * {
+  list-style: none;
+}
+
+ul * li * {
+  padding: 0;
+}
+
+.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  border-bottom: 1px solid gray;
+  color: black;
+}
+
+.navbar nav ul:first-child {
+  width: 30%;
+}
+
+.navbar nav ul:first-child li a {
+  color: black;
+}
+
+.navbar nav ul:last-child {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar nav ul:last-child li {
+  padding: 0em 1.5em;
+}
+
+.navbar nav ul:last-child li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../image/pexels-the-lazy-artist-gallery-1471120.jpg");
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section div {
+  width: 50%;
+}
+
+.main-section div:first-child {
+  margin: 8em 0em 0em 8em;
+  color: white;
+}
+
+.main-section div:first-child p:first-child,
+.main-section div:first-child #auto-text {
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+  font-size: 1.1em;
+}
+
+.main-section div:first-child p:nth-child(2) {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.main-section div:first-child .more {
+  width: 8em;
+  color: white;
+  padding: 0.3em 0.5em;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  text-align: center;
+  margin-top: 0.8em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #63b8ee00), to(#8f969b));
+  background: linear-gradient(180deg, #63b8ee00 5%, #8f969b 100%);
+}
+
+.main-section div:first-child .more a {
+  color: white;
+}
+
+.main-section div:first-child .more:hover, .main-section div:first-child .more:active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #63b8ee00), to(#8f969b));
+  background: linear-gradient(90deg, #63b8ee00 5%, #8f969b 100%);
+}
+
+.main-section div:nth-child(3) {
+  text-align: center;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  padding: 2em 0em 0em 0em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-me .second-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 18em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .second-section #about-tab {
+  text-align: center;
+  width: 100%;
+}
+
+.about-me .second-section #about-tab h1 {
+  margin-bottom: 1.1em;
+}
+
+.about-me .second-section #about-tab p {
+  margin: 0em 5em;
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+.about-me .second-section #skill-tab {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.about-me .second-section #skill-tab h1 {
+  color: #1e2934f0;
+}
+
+.about-me .second-section #skill-tab .skill-list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0em;
+}
+
+.about-me .second-section #skill-tab .skill-list .frontend-skill {
+  margin-right: 1.5em;
+}
+
+.about-me .second-section #skill-tab .skill-list .frontend-skill,
+.about-me .second-section #skill-tab .skill-list .backend-skills {
+  width: 13.5em;
+}
+
+.about-me .second-section #skill-tab .skill-list .frontend-skill .skill-item,
+.about-me .second-section #skill-tab .skill-list .backend-skills .skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  background: #1e2934f0;
+  color: white;
+}
+
+.about-me .second-section #skill-tab .skill-list .frontend-skill .skill-item .checked,
+.about-me .second-section #skill-tab .skill-list .backend-skills .skill-item .checked {
+  color: #090e14f0;
+}
+
+.about-me .second-section #skill-tab .skill-list .backend-skills {
+  margin-left: 1.5em;
+}
+
+.about-me .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .slider .first-active {
+  margin-right: 0.5em;
+  background: white;
+  border: 1px solid black;
+}
+
+.about-me div > .first-active,
+.about-me div > .second-active {
+  height: 0.5em;
+  width: 1.5em;
+  background: #1e2934f0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolio {
+  padding: 2em 0em 0em 0em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../image/pexels-the-lazy-artist-gallery-1471120.jpg");
+}
+
+.portfolio .header {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .header::before, .portfolio .header::after {
+  content: '';
+  width: 28%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.portfolio .header::before {
+  margin-left: 40%;
+}
+
+.portfolio .header::after {
+  margin-right: 40%;
+}
+
+.portfolio .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2em 4em;
+  cursor: pointer;
+}
+
+.portfolio .card .card-item {
+  width: 28%;
+  border: 1px solid black;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  background: #3D3C3A;
+  color: white;
+  opacity: 0.8;
+}
+
+.portfolio .card .card-item h2 {
+  text-align: center;
+}
+
+.portfolio .card .card-item .card-image {
+  margin-top: 1em;
+}
+
+.portfolio .card .card-item .card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio .card .card-item:nth-child(3) .card-image, .portfolio .card .card-item:nth-child(4) .card-image {
+  text-align: center;
+}
+
+.portfolio .card .card-item:nth-child(3) .card-image img, .portfolio .card .card-item:nth-child(4) .card-image img {
+  width: 60%;
+  height: auto;
+}
+
+.portfolio .card .card-item:nth-child(6) .card-image {
+  background: white;
+}
+
+.portfolio .card .card-item:nth-child(5) .card-image {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-info {
+  width: 100%;
+  display: none;
+  position: fixed;
+  background-color: #3d3c3a96;
+  z-index: 1000;
+  height: 100%;
+  top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-info .card-info-item {
+  border-radius: 1em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  padding: 2em;
+}
+
+.card-info .card-info-item .card-info-image {
+  width: 100%;
+}
+
+.card-info .card-info-item .card-info-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info .card-info-item .card-info-description .close-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-info .card-info-item .card-info-description ul {
+  line-height: 2.5em;
+}
+
+.card-info .card-info-item .card-info-description ul li {
+  list-style-type: disclosure-closed;
+}
+
+.contact-form {
+  padding: 0em;
+  background: none !important;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-top: 1em !important;
+}
+
+.contact-form h1::before {
+  margin-left: 48% !important;
+}
+
+.contact-form h1::after {
+  margin-right: 48% !important;
+}
+
+.contact-form form {
+  width: 40%;
+  margin: 2em auto;
+}
+
+.contact-form form .form-group-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contact-form form .form-group-one .name-col,
+.contact-form form .form-group-one .email-col {
+  width: 50%;
+  height: 6vh;
+}
+
+.contact-form form .form-group-one .name-col input,
+.contact-form form .form-group-one .email-col input {
+  width: 90%;
+  height: 100%;
+  border-radius: 0.5em;
+  border: 1px solid gray;
+  padding: 0 0.5em;
+}
+
+.contact-form form .form-group-one .name-col .email,
+.contact-form form .form-group-one .email-col .email {
+  margin-left: 5%;
+}
+
+.contact-form form .form-group-two {
+  width: 100%;
+}
+
+.contact-form form .form-group-two textarea {
+  width: 100%;
+  margin: 2em 0em 0em 0em;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  resize: none;
+  padding: 0.5em 0em 0em 0.5em;
+}
+
+.contact-form form button {
+  margin-top: 1.5em;
+  padding: 0.5em;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 0.5em;
+  color: gray;
+  cursor: pointer;
+}
+
+.contact-form form button:active {
+  color: white;
+  background: #3D3C3A;
+}
+/*# sourceMappingURL=index.css.map */
