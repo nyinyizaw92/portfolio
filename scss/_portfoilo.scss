@@ -1,15 +1,14 @@
 .portfolio {
-    padding: 2em 0em 0em 0em;
+    padding: 2em 0em;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-image: url('../image/pexels-the-lazy-artist-gallery-1471120.jpg');
+    // background-image: url('../image/pexels-the-lazy-artist-gallery-1471120.jpg');
 
     .header {
-        margin-top: 2em;
+        margin-bottom: 2em;
         display: flex;
         justify-content: center;
         position: relative;
@@ -34,33 +33,39 @@
         }
     }
 
-    .card {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 2em 4em;
-        cursor: pointer;
+    .row {
+        width: 90%;
+        margin: 0 auto;
 
-        .card-item {
-            h2 {
-                text-align: center;
-            }
+        .portfolio-card {
+            cursor: pointer;
+            margin-bottom: 1em;
 
-            width: 28%;
-            border: 1px solid black;
-            padding: 1em;
-            margin-bottom: 2em;
-            border-radius: 0.5em;
-            background: #3D3C3A;
-            color: white;
-            opacity: 0.8;
+            .portfolio-card-item {
+                height: 100%;
 
-            .card-image {
-                margin-top: 1em;
+                h2 {
+                    text-align: center;
+                    font-size: 1.2em;
+                }
 
-                img {
-                    width: 100%;
-                    height: auto
+                // width: 22%;
+                // margin:0em 1em;
+                border: 1px solid black;
+                padding: 1em;
+                // margin-bottom: 2em;
+                border-radius: 0.5em;
+                background: #3D3C3A;
+                color: white;
+                opacity: 0.8;
+
+                .card-image {
+                    margin-top: 1em;
+
+                    img {
+                        width: 100%;
+                        height: auto
+                    }
                 }
             }
 
@@ -92,6 +97,78 @@
             }
         }
 
+    }
 
+
+
+
+    // .card {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     padding: 0em 4em;
+    //     cursor: pointer;
+
+    //     .card-item {
+    //         h2 {
+    //             text-align: center;
+    //         }
+
+    //         width: 20%;
+    //         border: 1px solid black;
+    //         padding: 1em;
+    //         margin-bottom: 2em;
+    //         border-radius: 0.5em;
+    //         background: #3D3C3A;
+    //         color: white;
+    //         opacity: 0.8;
+
+    //         .card-image {
+    //             margin-top: 1em;
+
+    //             img {
+    //                 width: 100%;
+    //                 height: auto
+    //             }
+    //         }
+
+    //         &:nth-child(3),
+    //         &:nth-child(4) {
+    //             .card-image {
+    //                 text-align: center;
+
+    //                 img {
+    //                     width: 60%;
+    //                     height: auto
+    //                 }
+    //             }
+    //         }
+
+    //         &:nth-child(6) {
+    //             .card-image {
+    //                 background: white
+    //             }
+    //         }
+
+    //         &:nth-child(5) {
+    //             .card-image {
+    //                 background: white;
+    //                 display: flex;
+    //                 height: 60%;
+    //                 align-items: center;
+    //             }
+    //         }
+    //     }
+
+
+
+    // }
+
+    .card:nth-child(3) {
+        justify-content: flex-start;
+
+        .card-item {
+            margin-right: 2em
+        }
     }
 }

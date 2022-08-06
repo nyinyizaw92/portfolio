@@ -1,12 +1,14 @@
 .contact-form {
-    padding: 0em;
-    background: none !important;
-    // background-image: url('../image/pexels-milo-textures-2768398.jpg') !important;
+    padding: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../image/contact_bg.png');
 
 
     h1 {
         text-align: center;
-        margin-top: 1em !important;
+        // margin-top: 1em !important;
+        color: white;
 
         &::before {
             margin-left: 48% !important;
@@ -17,59 +19,102 @@
         }
     }
 
-    form {
-        width: 40%;
-        margin: 2em auto;
+    .row {
 
-        .form-group-one {
+        .contact-icon {
             display: flex;
-            width: 100%;
+            align-items: center;
+            justify-content: center;
 
-            .name-col,
-            .email-col {
-                width: 50%;
-                height: 6vh;
+            i {
+                font-size: 15em;
+                color: #4E8197;
+            }
+        }
 
-                input {
-                    width: 90%;
-                    height: 100%;
-                    border-radius: 0.5em;
+        .send-mail-form {
+
+            form {
+                width: 90%;
+                margin: 2em auto;
+
+                .name-col,
+                .email-col {
+                    width: 100%;
+                    height: 6vh;
+
+                    margin-bottom: 1.5em;
+
+                    input {
+                        width: 100%;
+                        padding: 0.5em;
+                        height: 100%;
+                        border-radius: 0.5em;
+                        outline: none;
+                        border: 1px solid #257d9d4f;
+
+                        &:active,
+                        &:visited,
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            border: 2px solid #257d9d4f !important;
+                        }
+                    }
+
+                    input:focus-visible {
+                        border: 2px solid #257d9d4f !important;
+                    }
+                }
+
+                .form-group-two {
+                    width: 100%;
+
+                    textarea {
+                        width: 100%;
+                        border: 1px solid #257d9d4f;
+                        height: 10em;
+                        border-radius: 0.5em;
+                        resize: none;
+                        padding: 0.5em 0em 0em 0.5em;
+                        outline: none;
+
+                        &:active,
+                        &:visited,
+                        &:hover,
+                        &:focus,
+                        &:focus-visible {
+                            border: 2px solid #257d9d4f !important;
+                            box-shadow: none !important;
+                        }
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    margin-top: 1.5em;
                     border: 1px solid gray;
-                    padding: 0 0.5em;
+                    border-radius: 0.5em;
+                    color: gray;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #4E8197;
+                    color: white;
+                    border: 1px solid transparent;
+
+                    // &:active {
+                    //     color: white;
+                    //     // background: $content-background
+                    // }
                 }
-
-                .email {
-                    margin-left: 5%
-                }
-            }
-        }
-
-        .form-group-two {
-            width: 100%;
-
-            textarea {
-                width: 100%;
-                margin: 2em 0em 0em 0em;
-                border: 1px solid gray;
-                border-radius: 0.5em;
-                resize: none;
-                padding: 0.5em 0em 0em 0.5em;
-            }
-        }
-
-        button {
-            margin-top: 1.5em;
-            padding: 0.5em;
-            background: white;
-            border: 1px solid gray;
-            border-radius: 0.5em;
-            color: gray;
-            cursor: pointer;
-
-            &:active {
-                color: white;
-                background: $content-background
             }
         }
     }
+
 }
+
+
+// font-size: 27em;
+// color: #257d9d4f;

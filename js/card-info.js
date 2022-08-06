@@ -1,4 +1,4 @@
-var card_item = document.querySelectorAll(".card-item");
+var card_item = document.querySelectorAll(".portfolio-card-item");
 var card_info = document.querySelectorAll(".card-info");
 var close_info = document.querySelectorAll(".close-info");
 var body = document.getElementById("body")

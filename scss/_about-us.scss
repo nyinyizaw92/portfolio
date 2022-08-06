@@ -1,26 +1,47 @@
 .about-me {
     display: flex;
-    height: 80vh;
+    // height: 80vh;
     padding: 2em 0em 0em 0em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #c6d6de;
+    // color: white;
+    // background-color: black;
+
+    .carousel-dark {
+        width: 100%;
+        padding-bottom: 1em;
+        height: 25em;
+        display: flex;
+    }
 
     .second-section {
         display: flex;
-        height: 18em;
+        height: auto;
+        // height: 25em;
+
         align-items: center;
+        // min-height: 55vh;
+        // max-height: 55vh;
 
         #about-tab {
             text-align: center;
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
+
+            // height: 55vh;
+            // display: flex;
+            // align-items: center;
+            // flex-direction: column;
+            // justify-content: center;
 
             h1 {
                 margin-bottom: 1.1em
             }
 
             p {
-                margin: 0em 5em;
+                margin: 0em 2em;
                 line-height: 2em;
                 margin-bottom: 1em;
             }
@@ -31,7 +52,7 @@
         #skill-tab {
             width: 100%;
             text-align: center;
-            display: none;
+            // display: none;
 
             h1 {
                 color: #1e2934f0
@@ -41,6 +62,7 @@
                 text-align: left;
                 display: flex;
                 margin: 1em 0em;
+                justify-content: center;
 
                 .frontend-skill {
                     margin-right: 1.5em

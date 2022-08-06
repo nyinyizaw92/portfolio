@@ -1,0 +1,123 @@
+@media only screen and (max-width: 280px) {
+    .portfolio {
+        .card {
+            padding: 0em 2em;
+
+        }
+
+        .header {
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .portfolio {
+        .card {
+            flex-direction: column;
+
+            .card-item {
+                width: auto;
+            }
+        }
+
+        .header {
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        .card:nth-child(3) {
+            .card-item {
+                margin-right: 0em;
+                max-height: 12em;
+                overflow-y: hidden;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 600px) {
+    .portfolio {
+        .card {
+            .card-item {
+                width: 38%;
+            }
+        }
+
+        .header {
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        .card:nth-child(3) {
+            display: grid;
+            grid-template-columns: 38% 38%;
+            grid-column-gap: 4em;
+
+            .card-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 900px) {
+    .portfolio {
+        .card {
+            .card-item {
+                width: 42%;
+            }
+        }
+
+        .header {
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        .card:nth-child(3) {
+            display: grid;
+            grid-template-columns: 42% 42%;
+            grid-column-gap: 4.5em;
+
+            .card-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width: 1024px) {
+    .portfolio {
+        .card {
+            padding: 0em 2em
+        }
+
+        .header {
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        .card:nth-child(3) {
+
+            .card-item {
+                margin-right: 1.2em
+            }
+        }
+    }
+}
