@@ -25,18 +25,6 @@
                 text-align: center;
             }
 
-            #skill-tab {
-                .skill-list {
-                    flex-direction: column;
-
-                    .frontend-skill,
-                    .backend-skills {
-                        margin: 0 auto;
-                        width: 90%
-                    }
-                }
-            }
-
             // flex-direction: column;
 
             // #skill-tab {
@@ -71,4 +59,50 @@
 
     // }
     // }
+}
+
+@media only screen and (max-width: 767px) {
+    .skills {
+
+        #skill-tab {
+            .skill-list {
+                flex-direction: column;
+
+                .frontend-skill,
+                .backend-skills {
+                    margin: 0 auto;
+                    width: 90%;
+
+                    // .skill-item {
+                    //     .text {
+                    //         width: 50%;
+                    //     }
+                    // }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .skills {
+
+        #skill-tab {
+            .skill-list {
+
+
+                .frontend-skill,
+                .backend-skills {
+
+                    .skill-item {
+                        .text {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }

@@ -52,16 +52,20 @@ ul * li * {
   border-bottom: 1px solid gray;
 }
 
-.navbar a {
-  color: white !important;
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link:active {
+  color: black !important;
 }
 
 .navbar ul:first-child {
   width: 30%;
-}
-
-.navbar ul:first-child li a {
-  color: white !important;
 }
 
 .navbar ul:last-child {
@@ -80,7 +84,6 @@ ul * li * {
 
 .navbar ul:last-child li a {
   text-decoration: none;
-  color: white !important;
 }
 
 .main-section .text-center img {
@@ -176,60 +179,6 @@ ul * li * {
   margin-bottom: 1em;
 }
 
-.about-me .second-section #skill-tab {
-  width: 100%;
-  text-align: center;
-}
-
-.about-me .second-section #skill-tab h1 {
-  color: #1e2934f0;
-}
-
-.about-me .second-section #skill-tab .skill-list {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 1em 0em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about-me .second-section #skill-tab .skill-list .frontend-skill {
-  margin-right: 1.5em;
-}
-
-.about-me .second-section #skill-tab .skill-list .frontend-skill,
-.about-me .second-section #skill-tab .skill-list .backend-skills {
-  width: 13.5em;
-}
-
-.about-me .second-section #skill-tab .skill-list .frontend-skill .skill-item,
-.about-me .second-section #skill-tab .skill-list .backend-skills .skill-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  border: 1px solid black;
-  border-radius: 0.5em;
-  background: #1e2934f0;
-  color: white;
-}
-
-.about-me .second-section #skill-tab .skill-list .frontend-skill .skill-item .checked,
-.about-me .second-section #skill-tab .skill-list .backend-skills .skill-item .checked {
-  color: #090e14f0;
-}
-
-.about-me .second-section #skill-tab .skill-list .backend-skills {
-  margin-left: 1.5em;
-}
-
 .about-me .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,6 +202,64 @@ ul * li * {
   background: #1e2934f0;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.skills #skill-tab {
+  width: 100%;
+  text-align: center;
+  padding: 4em 0em 2em 0em;
+}
+
+.skills #skill-tab h1 {
+  color: #1e2934f0;
+}
+
+.skills #skill-tab .skill-list {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills #skill-tab .skill-list .frontend-skill {
+  margin-right: 1.5em;
+}
+
+.skills #skill-tab .skill-list .frontend-skill,
+.skills #skill-tab .skill-list .backend-skills {
+  width: 40%;
+}
+
+.skills #skill-tab .skill-list .frontend-skill .skill-item,
+.skills #skill-tab .skill-list .backend-skills .skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills #skill-tab .skill-list .frontend-skill .skill-item .text,
+.skills #skill-tab .skill-list .backend-skills .skill-item .text {
+  width: 50%;
+}
+
+.skills #skill-tab .skill-list .frontend-skill .skill-item .progress,
+.skills #skill-tab .skill-list .backend-skills .skill-item .progress {
+  width: 100%;
+  margin: 0em 1em;
+}
+
+.skills #skill-tab .skill-list .backend-skills {
+  margin-left: 1.5em;
 }
 
 .portfolio {
@@ -579,20 +586,30 @@ ul * li * {
   .about-me .second-section #about-tab p {
     margin: 0em;
   }
-  .about-me .second-section #skill-tab .skill-list {
+  .about-me .carousel-dark .carousel-control-prev,
+  .about-me .carousel-dark .carousel-control-next {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skills #skill-tab .skill-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-me .second-section #skill-tab .skill-list .frontend-skill,
-  .about-me .second-section #skill-tab .skill-list .backend-skills {
+  .skills #skill-tab .skill-list .frontend-skill,
+  .skills #skill-tab .skill-list .backend-skills {
     margin: 0 auto;
     width: 90%;
   }
-  .about-me .carousel-dark .carousel-control-prev,
-  .about-me .carousel-dark .carousel-control-next {
-    display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .skills #skill-tab .skill-list .frontend-skill .skill-item .text,
+  .skills #skill-tab .skill-list .backend-skills .skill-item .text {
+    width: 30%;
   }
 }
 

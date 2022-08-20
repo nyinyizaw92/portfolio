@@ -49,52 +49,7 @@
 
 
 
-        #skill-tab {
-            width: 100%;
-            text-align: center;
-            // display: none;
 
-            h1 {
-                color: #1e2934f0
-            }
-
-            .skill-list {
-                text-align: left;
-                display: flex;
-                margin: 1em 0em;
-                justify-content: center;
-
-                .frontend-skill {
-                    margin-right: 1.5em
-                }
-
-                .frontend-skill,
-                .backend-skills {
-                    width: 13.5em;
-
-                    .skill-item {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0.5em;
-                        margin-bottom: 0.5em;
-                        border: 1px solid black;
-                        border-radius: 0.5em;
-                        background: #1e2934f0;
-                        color: white;
-
-                        .checked {
-                            color: #090e14f0;
-                        }
-                    }
-                }
-
-                .backend-skills {
-                    margin-left: 1.5em
-                }
-            }
-
-            // display: none;
-        }
     }
 
     .slider {
@@ -119,4 +74,64 @@
     }
 
 
+}
+
+.skills {
+
+    #skill-tab {
+        width: 100%;
+        text-align: center;
+        padding: 4em 0em 2em 0em;
+        // display: none;
+
+        h1 {
+            color: #1e2934f0
+        }
+
+        .skill-list {
+            text-align: left;
+            display: flex;
+            margin: 1em 0em;
+            justify-content: center;
+
+            .frontend-skill {
+                margin-right: 1.5em
+            }
+
+            .frontend-skill,
+            .backend-skills {
+                width: 40%;
+
+                .skill-item {
+                    display: flex;
+                    padding: 0.5em;
+                    margin-bottom: 0.5em;
+                    // border: 1px solid black;
+                    border-radius: 0.5em;
+                    // background: #1e2934f0;
+                    // color: white;
+                    align-items: center;
+
+                    // .checked {
+                    //     color: #090e14f0;
+                    // }
+
+                    .text {
+                        width: 50%;
+                    }
+
+                    .progress {
+                        width: 100%;
+                        margin: 0em 1em;
+                    }
+                }
+            }
+
+            .backend-skills {
+                margin-left: 1.5em
+            }
+        }
+
+        // display: none;
+    }
 }
